@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C00B0FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2979FF"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:text="Enter Number"/>
+
+    <EditText
+        android:id="@+id/inNumber"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/labelNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"
+        android:background="#C2185B" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#303F9F">
+        <GridLayout
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/sumBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="SUM"/>
+            <Button
+                android:id="@+id/meanBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="MEAN"/>
+            <Button
+                android:id="@+id/medianBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="MEDIAN"/>
+            <Button
+                android:id="@+id/stdvBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="STDV"/>
+            <Button
+                android:id="@+id/minBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="MIN"/>
+            <Button
+                android:id="@+id/maxBut"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:text="MAX"/>
+        </GridLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/outTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:textColor="#110F0F"
+        android:textSize="@dimen/textSize" />
+
+
+</RelativeLayout>
